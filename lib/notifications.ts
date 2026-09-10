@@ -10,6 +10,9 @@ type NotificationType =
   | "justificacion_rechazada"
   | "calificacion"
   | "comunicado"
+  | "evento"
+  | "tarea"
+  | "boletin"
   | "general";
 
 export interface CreateNotificationInput {

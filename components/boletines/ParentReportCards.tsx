@@ -1,0 +1,1 @@
+"use client"; import {useEffect,useState} from "react"; import {ReportCardsList} from "./ReportCardManager"; export default function ParentReportCards(){const[b,setB]=useState<any[]>([]);useEffect(()=>{fetch('/api/boletines',{cache:'no-store'}).then(r=>r.json()).then(d=>setB(d.boletines||[]))},[]);return <ReportCardsList boletines={b}/>}

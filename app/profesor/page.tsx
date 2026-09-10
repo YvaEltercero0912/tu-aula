@@ -42,6 +42,9 @@ export default async function ProfesorPage() {
         <Link href="/profesor/alumnos?nuevo=1" className={styles.primaryButton}>+ Nuevo alumno</Link>
         <Link href="/profesor/cursos?nuevo=1" className={styles.secondaryButton}>+ Nuevo curso</Link>
         <Link href="/profesor/asistencia" className={styles.secondaryButton}>✓ Tomar asistencia</Link>
+        <Link href="/profesor/agenda" className={styles.secondaryButton}>📅 Agenda y tareas</Link>
+        <Link href="/profesor/boletines" className={styles.secondaryButton}>📄 Boletines</Link>
+        <Link href="/profesor/importar" className={styles.secondaryButton}>⬆ Importar Excel</Link>
         <Link href="/profesor/comunicados" className={styles.secondaryButton}>✉ Enviar comunicado</Link>
       </div>
 

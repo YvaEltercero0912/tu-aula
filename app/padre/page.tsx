@@ -75,6 +75,8 @@ export default async function PadrePage() {
           <span className={styles.statLabel}>Comunicados</span>
           <strong className={localStyles.go}>Ver avisos →</strong>
         </Link>
+              <Link href="/padre/agenda" className={`${styles.card} ${styles.cardLink}`}><span className={localStyles.icon}>📅</span><span className={styles.statLabel}>Agenda y tareas</span><strong className={localStyles.go}>Ver agenda →</strong></Link>
+        <Link href="/padre/boletines" className={`${styles.card} ${styles.cardLink}`}><span className={localStyles.icon}>📄</span><span className={styles.statLabel}>Boletines</span><strong className={localStyles.go}>Ver boletines →</strong></Link>
       </div>
 
       <div className={localStyles.children}>

@@ -47,3 +47,11 @@ Padre/Tutor:
 1. Recibe el comunicado en **Comunicados**.
 2. También recibe una notificación interna.
 3. Si activó Web Push en un dominio HTTPS, recibe el aviso aunque Tu Aula esté cerrada.
+
+
+## Nuevos módulos
+- Agenda escolar y tareas con avisos push a familias.
+- Boletín digital por período calculado desde las calificaciones.
+- Importación masiva de alumnos/tutores/cursos desde Excel.
+
+Para la importación Excel ejecutar `npm install` para instalar `xlsx`.
