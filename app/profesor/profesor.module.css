@@ -1,0 +1,3 @@
+.icon { font-size: 25px; }
+.quick { display: flex; flex-wrap: wrap; gap: 10px; }
+@media (max-width: 600px) { .quick { display: grid; grid-template-columns: 1fr; } .quick a { width: 100%; min-height: 48px; } }

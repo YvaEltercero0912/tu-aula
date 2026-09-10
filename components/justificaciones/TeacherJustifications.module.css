@@ -1,0 +1,186 @@
+.wrapper {
+  display: grid;
+  gap: 14px;
+}
+
+.filters {
+  display: inline-flex;
+  width: fit-content;
+  padding: 4px;
+  border: 1px solid #e4e7ec;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.filters button {
+  min-height: 36px;
+  padding: 0 13px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: #667085;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.filters button.active {
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.card {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid #e4e7ec;
+  border-radius: 17px;
+  background: #fff;
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.course {
+  color: #4f46e5;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.card h2 {
+  margin: 4px 0 2px;
+  font-size: 18px;
+  letter-spacing: -0.025em;
+}
+
+.cardTop p,
+.reason p {
+  margin: 0;
+  color: #667085;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.status {
+  flex: 0 0 auto;
+  padding: 5px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.pendiente {
+  background: #fffaeb;
+  color: #b54708;
+}
+
+.aprobada {
+  background: #ecfdf3;
+  color: #067647;
+}
+
+.rechazada {
+  background: #fef3f2;
+  color: #b42318;
+}
+
+.reason {
+  padding: 12px;
+  border-radius: 12px;
+  background: #f9fafb;
+}
+
+.reason small,
+.reason strong {
+  display: block;
+}
+
+.reason small {
+  color: #98a2b3;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.reason strong {
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+.reason p {
+  margin-top: 6px;
+}
+
+.tutor {
+  color: #98a2b3;
+  font-size: 11px;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.actions button {
+  min-height: 44px;
+  border-radius: 11px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.reject {
+  border: 1px solid #fda29b;
+  background: #fff;
+  color: #b42318;
+}
+
+.approve {
+  border: 0;
+  background: #16a34a;
+  color: #fff;
+}
+
+.error,
+.state {
+  padding: 15px;
+  border-radius: 13px;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.error {
+  background: #fef3f2;
+  color: #b42318;
+}
+
+.state {
+  border: 1px dashed #d0d5dd;
+  background: #fff;
+  color: #667085;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,39 @@
+:root {
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --text: #172033;
+  --muted: #667085;
+  --primary: #4f46e5;
+  --border: #e4e7ec;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.card {
+  max-width: 560px;
+  margin: 60px auto;
+  padding: 32px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+}
